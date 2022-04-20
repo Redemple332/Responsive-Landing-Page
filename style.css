@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.landing {
+  background: url(https://www.denofgeek.com/wp-content/uploads/2022/04/thor-love-and-thunder-poster-marvel-chris-hemsworth.png?resize=768%2C432)
+    no-repeat center;
+  height: 100vh;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+button {
+  background-color: #fb3533;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.3rem 0.7rem;
+  font-family: "Irish Grover", cursive;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: 0;
+}
+
+.search {
+  margin: auto;
+  margin-top: 16rem;
+  width: max-content;
+}
+
+.search input {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  border: 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 2rem;
+  padding: 0.3rem 1rem;
+}
+
+.download {
+  background: url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/06/THOR-LOVE-AND-THUNDER-SET-PHOTO.jpg?q=50&fit=contain&w=767&h=384&dpr=1.5)
+    no-repeat center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.download button {
+  margin: 70% 20%;
+}
+
+.shop {
+  background: url(https://assets-prd.ignimgs.com/2022/04/18/thor-love-thunder-funko-pops-1650298520364.png)
+    no-repeat center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.shop button {
+  margin: 70% 25%;
+}
+
+.about {
+  background: url(https://thedisinsider.com/wp-content/uploads/2021/12/C59A0A95-D37A-4854-A4C7-3DA1F4866CFF.jpeg)
+    no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.about-bg {
+  background: #ffffff8e;
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 7px;
+}
+
+.about-bg h1,
+p {
+  padding: 0 1rem;
+}
+
+footer {
+  background-color: #fb3533;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (max-width: 1024px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .landing {
+    grid-column: 1/-1;
+  }
+  .search {
+    margin-top: 5rem;
+  }
+  .about {
+    grid-column: 1/-1;
+  }
+  footer {
+    grid-column: 1/-1;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+   section{
+    grid-template-columns: 1fr;
+   }
+   .search{
+       margin-top: 16rem;
+   }
+  }
